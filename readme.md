@@ -10,7 +10,7 @@
 
 ### Технический стек
 
-- Backend: PHP 8.1 (Native, без фреймворков), PDO для работы с БД.
+- Backend: PHP 8+ (Native, без фреймворков), PDO для работы с БД.
 
 - Frontend: jQuery (AJAX), Bootstrap 5, Select2.
 
@@ -31,13 +31,12 @@
 
 Создайте файл .env и укажите данные вашей БД (пример оформления указан в .env.example):
 
-<code>DB_HOST=localhost
-
-DB_NAME=имя_вашей_базы
-
-DB_USER=ваш_пользователь
-
-DB_PASS=ваш_пароль</code>
+```ini
+DB_HOST=localhost
+DB_NAME=support_tracker
+DB_USER=root
+DB_PASS=
+```
 ### Запуск сервера. Проект настроен так, что входной точкой является папка public. Для запуска, можете как и я, использовать встроенный сервер PHP:
 
 <code>php -S localhost:8000</code>
